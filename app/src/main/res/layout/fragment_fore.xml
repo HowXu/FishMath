@@ -1,51 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".bottom.ForeFragment"
-    android:gravity="center"
-    android:theme="@style/Theme.FishMath">
+    android:theme="@style/Theme.FishMath"
+    android:background="@drawable/color_gradient"
+    tools:context=".bottom.ForeFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="#6003A9F4">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-                <com.google.android.material.appbar.MaterialToolbar
-                    android:layout_width="1000dp"
-                    android:layout_height="match_parent"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginLeft="-200dp"
-                    android:layout_marginRight="-200dp"
-                    android:background="#6003A9F4" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Fish Math"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_centerInParent="true"
-                    android:gravity="left"
-                    
-                    />
-
-                <ImageButton
-                    android:layout_width="40dp"
-                    android:layout_height="35dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:id="@+id/search"
-                    android:background="@drawable/search" />
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:text="Fish Math"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
 
 
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search"
+
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </RelativeLayout>
 
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shaped_layout">
 
 
-</ScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+
+
+
+
+

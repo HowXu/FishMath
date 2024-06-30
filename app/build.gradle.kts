@@ -42,4 +42,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.github.tapadoo:alerter:7.2.4")
+    implementation("androidx.percentlayout:percentlayout:1.0.0")
 }
