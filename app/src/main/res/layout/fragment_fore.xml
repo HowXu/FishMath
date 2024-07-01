@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/color_gradient"
     android:theme="@style/Theme.FishMath"
-    tools:context=".bottom.ForeFragment">
+    tools:context=".bottom.ForeFragment"
+    android:layout_marginBottom="55dp">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
@@ -94,31 +95,32 @@
                     android:id="@+id/img_page7"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/page"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/page" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/page7_title"
-                    android:layout_toRightOf="@+id/img_page7"
                     android:layout_marginLeft="8dp"
-                    android:textSize="18dp"
                     android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/img_page7"
+                    android:fontFamily="@font/meslo_regular"
+                    android:text="@string/page7_title"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/meslo_regular"/>
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/page7_n"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
-                    android:text="@string/page7_n"
-                    android:textColor="@color/black"
-                    android:gravity="center_horizontal"
                     android:layout_below="@+id/img_page7"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="8dp"
-                    android:textSize="30dp"/>
+                    android:gravity="center_horizontal"
+                    android:text="@string/page7_n"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
 
                 <EditText
                     android:id="@+id/page7_edit1"
@@ -167,56 +169,56 @@
                     android:id="@+id/img_page9"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/page"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/page" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Page9 海伦-秦九韶公式"
-                    android:layout_toRightOf="@+id/img_page9"
                     android:layout_marginLeft="8dp"
-                    android:textSize="18dp"
                     android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/img_page9"
+                    android:fontFamily="@font/meslo_regular"
+                    android:text="Page9 海伦-秦九韶公式"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/meslo_regular"/>
+                    android:textSize="18dp" />
 
                 <TextView
                     android:id="@+id/page9_a"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
-                    android:text="a"
-                    android:textColor="@color/black"
-                    android:gravity="center_horizontal"
                     android:layout_below="@+id/img_page9"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="8dp"
-                    android:textSize="30dp"/>
+                    android:gravity="center_horizontal"
+                    android:text="a"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/page9_b"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
-                    android:text="b"
-                    android:textColor="@color/black"
-                    android:gravity="center"
                     android:layout_below="@+id/page9_a"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="8dp"
-                    android:textSize="30dp"/>
+                    android:gravity="center"
+                    android:text="b"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
 
                 <TextView
                     android:id="@+id/page9_c"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
-                    android:text="c"
-                    android:textColor="@color/black"
-                    android:gravity="center"
                     android:layout_below="@+id/page9_b"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="8dp"
-                    android:textSize="30dp"/>
+                    android:gravity="center"
+                    android:text="c"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
 
                 <EditText
                     android:id="@+id/page9_edit1"
@@ -229,6 +231,7 @@
                     android:background="@drawable/color_edittext"
                     android:inputType="numberDecimal"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
                 <EditText
                     android:id="@+id/page9_edit2"
                     android:layout_width="300dp"
@@ -240,6 +243,7 @@
                     android:background="@drawable/color_edittext"
                     android:inputType="numberDecimal"
                     tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
                 <EditText
                     android:id="@+id/page9_edit3"
                     android:layout_width="300dp"
@@ -274,6 +278,127 @@
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shaped_layout">
+
+                <ImageView
+                    android:id="@+id/img_page12"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/page" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/img_page12"
+                    android:fontFamily="@font/meslo_regular"
+                    android:text="Page12 求解一元二次方程"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/page12_a"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page12"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="a"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/page12_b"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page12_a"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="b"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/page12_c"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page12_b"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="c"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/page12_edit1"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page12"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page12_a"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="numberSigned|numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/page12_edit2"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page12_a"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page12_b"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="numberSigned|numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/page12_edit3"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page12_b"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page12_c"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="numberSigned|numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <com.github.nikartm.button.FitButton
+                    android:id="@+id/page12_submit_button"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    app:fb_backgroundColor="#A8D8CD"
+                    app:fb_borderColor="#DDEFE3"
+                    app:fb_borderWidth="4dp"
+                    app:fb_cornerRadius="8dp"
+                    app:fb_fontFamilyRes="@font/fzyh"
+                    app:fb_rippleColor="#42FFF9C4"
+                    app:fb_shape="rectangle"
+                    app:fb_text="@string/submit"
+                    app:fb_textColor="@color/black"
+                    app:fb_textStyle="normal"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
 
         </LinearLayout>
 

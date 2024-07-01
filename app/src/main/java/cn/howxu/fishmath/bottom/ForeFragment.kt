@@ -95,6 +95,7 @@ class ForeFragment : Fragment() {
             var b = BigDecimal(page9_edittext_b.text.toString())
             var c = BigDecimal(page9_edittext_c.text.toString())
             var checkout = ""
+            //判断是否为空，否则无处理
             if (checkManager.isNotNull(page9_edittext_a,page9_edittext_b,page9_edittext_c)){
                 checkout = if (!checkManager.isTriangle(a,b,c)){
                     getString(R.string.is_not_triangle)
@@ -108,11 +109,37 @@ class ForeFragment : Fragment() {
             }
         }
 
-        
+        //Page12 求解一元二次方程
+        val page12_edittext_a: EditText = requireActivity().findViewById(R.id.page12_edit1)
+        val page12_edittext_b: EditText = requireActivity().findViewById(R.id.page12_edit2)
+        val page12_edittext_c: EditText = requireActivity().findViewById(R.id.page12_edit3)
+        val page12_submit_button: FitButton =requireActivity().findViewById(R.id.page12_submit_button)
+        page12_submit_button.setOnClickListener{
+            var a = BigDecimal(page12_edittext_a.text.toString())
+            var b = BigDecimal(page12_edittext_b.text.toString())
+            var c = BigDecimal(page12_edittext_c.text.toString())
+            var checkout = ""
+            //判断是否为空，否则无处理
+            if (checkManager.isNotNull(page12_edittext_a,page12_edittext_b,page12_edittext_c)){
+                var result = algorithmManager.Page12_Binary_Linear_Equation_Group(a,b,c)
+                checkout = when(result.code) {
+                    1 -> {
+                        "x1=" + result.s1 + " , "+ "x2=" + result.s2
+                    }
+                    else -> {
+                        result.s1 //我勒个代码逻辑啊
+                    }
+                }
+                Alerter.create(requireActivity()).setText(
+                    checkout
+                ).setTitle(getString(R.string.result)).setDuration(5000L).setBackgroundColorInt(Color.rgb(22, 175, 245))
+                    .show()
+            }
+            }
 
+
+
+        }
     }
 
 
-
-
-}
