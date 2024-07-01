@@ -66,7 +66,7 @@ class ForeFragment : Fragment() {
             //System.exit(0)
             Alerter.create(requireActivity()).setText(getString(R.string.do_u_know))
                 .setTitle(getString(R.string.onDev)).setBackgroundColorInt(Color.rgb(168, 216, 205)).setIcon(
-                    com.tapadoo.alerter.R.drawable.alerter_ic_face
+                    R.drawable.happy
                 ).show()
         }
 
@@ -91,12 +91,13 @@ class ForeFragment : Fragment() {
         val page9_edittext_c: EditText = requireActivity().findViewById(R.id.page9_edit3)
         val page9_submit_button: FitButton =requireActivity().findViewById(R.id.page9_submit_button)
         page9_submit_button.setOnClickListener{
-            var a = BigDecimal(page9_edittext_a.text.toString())
-            var b = BigDecimal(page9_edittext_b.text.toString())
-            var c = BigDecimal(page9_edittext_c.text.toString())
-            var checkout = ""
+
             //判断是否为空，否则无处理
             if (checkManager.isNotNull(page9_edittext_a,page9_edittext_b,page9_edittext_c)){
+                var a = BigDecimal(page9_edittext_a.text.toString())
+                var b = BigDecimal(page9_edittext_b.text.toString())
+                var c = BigDecimal(page9_edittext_c.text.toString())
+                var checkout = ""
                 checkout = if (!checkManager.isTriangle(a,b,c)){
                     getString(R.string.is_not_triangle)
                 }else{
@@ -115,12 +116,13 @@ class ForeFragment : Fragment() {
         val page12_edittext_c: EditText = requireActivity().findViewById(R.id.page12_edit3)
         val page12_submit_button: FitButton =requireActivity().findViewById(R.id.page12_submit_button)
         page12_submit_button.setOnClickListener{
-            var a = BigDecimal(page12_edittext_a.text.toString())
-            var b = BigDecimal(page12_edittext_b.text.toString())
-            var c = BigDecimal(page12_edittext_c.text.toString())
-            var checkout = ""
+
             //判断是否为空，否则无处理
             if (checkManager.isNotNull(page12_edittext_a,page12_edittext_b,page12_edittext_c)){
+                var a = BigDecimal(page12_edittext_a.text.toString())
+                var b = BigDecimal(page12_edittext_b.text.toString())
+                var c = BigDecimal(page12_edittext_c.text.toString())
+                var checkout = ""
                 var result = algorithmManager.Page12_Binary_Linear_Equation_Group(a,b,c)
                 checkout = when(result.code) {
                     1 -> {
@@ -138,6 +140,26 @@ class ForeFragment : Fragment() {
             }
 
 
+        //Page15 求1，2，...，100的和 升级版
+        val page15_edittext: EditText = requireActivity().findViewById(R.id.page15_edit1)
+        val page15_submit_button: FitButton =requireActivity().findViewById(R.id.page15_submit_button)
+        val page15_attention_image: ImageButton =requireActivity().findViewById(R.id.page15_attention)
+
+        page15_attention_image.setOnClickListener{
+            Alerter.create(requireActivity()).setText(
+                getString(R.string.page15_attention)
+            ).setTitle(getString(R.string.result)).setDuration(4000L).setBackgroundColorInt(Color.rgb(229, 115, 115)).setIcon(R.drawable.attention)
+                .show()
+        }
+        page15_submit_button.setOnClickListener{
+            if (checkManager.isNotNull(page15_edittext)){
+                var a = BigInteger(page15_edittext.text.toString())
+                Alerter.create(requireActivity()).setText(
+                    algorithmManager.Page15_sum(a)
+                ).setTitle(getString(R.string.result)).setDuration(5000L).setBackgroundColorInt(Color.rgb(22, 175, 245))
+                    .show()
+            }
+        }
 
         }
     }

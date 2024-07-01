@@ -3,7 +3,7 @@
     <string name="title_activity_main">entry</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="app_description">\t\t这是一个简单的安卓应用项目，它实现了人教版高中数学必修三算法章节的所有框图算法\n\t\t其实以前我还用AIDE做过一个同样目的的App，但是写的惨不忍睹(虽然这个也差不多)\n\t\t谨以此，献给我的高中数学老师鱼Sir n_n</string>
+    <string name="app_description">\t\t这是一个简单的安卓应用项目，它实现了人教版高中数学必修三算法章节的所有框图算法\n\t\t其实以前我还用AIDE做过一个同样目的的App\n\t\t但是写的惨不忍睹(虽然这个也差不多)\n\t\t谨以此，献给我的高中数学老师鱼Sir n_n</string>
     <string name="submit">提交</string>
     <string name="page7_title">Page7 质数的判断</string>
     <string name="page7_n">n</string>
@@ -15,4 +15,8 @@
     <string name="onDev">正在开发中...</string>
     <string name="do_u_know">你小子知道这个通知多难做吗T_</string>
     <string name="is_not_triangle">这不是三角形的三边</string>
+    <string name="page15_title">Page15 对1,2,...,100求和</string>
+    <string name="page15_attention">原本只能求到100，升级了下可以求和到任意值\n值别太大，这个算法很烂会卡死</string>
+    <string name="about_title">关于</string>
+    <string name="github">访问项目Github页</string>
 </resources>

@@ -35,7 +35,7 @@
                 android:layout_marginLeft="50dp"
                 android:fontFamily="@font/meslo_regular"
                 android:text="@string/appbar_title"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp" />
 
 
@@ -74,6 +74,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:fontFamily="@font/fzyh"
                 android:letterSpacing="0.05"
                 android:lineSpacingMultiplier="1.5"
@@ -124,7 +126,7 @@
 
                 <EditText
                     android:id="@+id/page7_edit1"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/img_page7"
                     android:layout_marginLeft="3dp"
@@ -222,7 +224,7 @@
 
                 <EditText
                     android:id="@+id/page9_edit1"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/img_page9"
                     android:layout_marginLeft="3dp"
@@ -234,7 +236,7 @@
 
                 <EditText
                     android:id="@+id/page9_edit2"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/page9_a"
                     android:layout_marginLeft="3dp"
@@ -246,7 +248,7 @@
 
                 <EditText
                     android:id="@+id/page9_edit3"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/page9_b"
                     android:layout_marginLeft="3dp"
@@ -344,7 +346,7 @@
 
                 <EditText
                     android:id="@+id/page12_edit1"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/img_page12"
                     android:layout_marginLeft="3dp"
@@ -356,7 +358,7 @@
 
                 <EditText
                     android:id="@+id/page12_edit2"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/page12_a"
                     android:layout_marginLeft="3dp"
@@ -368,7 +370,7 @@
 
                 <EditText
                     android:id="@+id/page12_edit3"
-                    android:layout_width="300dp"
+                    android:layout_width="250dp"
                     android:layout_height="40dp"
                     android:layout_below="@+id/page12_b"
                     android:layout_marginLeft="3dp"
@@ -380,6 +382,90 @@
 
                 <com.github.nikartm.button.FitButton
                     android:id="@+id/page12_submit_button"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    app:fb_backgroundColor="#A8D8CD"
+                    app:fb_borderColor="#DDEFE3"
+                    app:fb_borderWidth="4dp"
+                    app:fb_cornerRadius="8dp"
+                    app:fb_fontFamilyRes="@font/fzyh"
+                    app:fb_rippleColor="#42FFF9C4"
+                    app:fb_shape="rectangle"
+                    app:fb_text="@string/submit"
+                    app:fb_textColor="@color/black"
+                    app:fb_textStyle="normal"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shaped_layout">
+
+                <ImageView
+                    android:id="@+id/img_page15"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/page" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@+id/img_page15"
+                    android:fontFamily="@font/meslo_regular"
+                    android:text="@string/page15_title"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/page15_t"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page15"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="t"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <ImageButton
+                    android:id="@+id/page15_attention"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/attention"/>
+
+                <EditText
+                    android:id="@+id/page15_edit1"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page15"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page15_t"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="number"
+                    android:text="100"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <com.github.nikartm.button.FitButton
+                    android:id="@+id/page15_submit_button"
                     android:layout_width="80dp"
                     android:layout_height="40dp"
                     android:layout_alignParentRight="true"
