@@ -10,6 +10,7 @@ class SelectManager(fmo: FragmentManager) {
     //val ft:FragmentTransaction = fm.beginTransaction()
     val fm:FragmentManager = fmo
 
+
     fun loadFragment(fragment: Fragment):Unit {
         val ft:FragmentTransaction = fm.beginTransaction()
         ft.replace(R.id.content, fragment)

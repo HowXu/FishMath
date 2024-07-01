@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">FishMath</string>
+    <string name="app_name">鱼Sir的计算器</string>
     <string name="title_activity_main">entry</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="app_description">\t\t这是一个简单的安卓应用项目，它实现了人教版高中数学必修三算法章节的所有算法\n\t\t其实以前我还用AIDE做过一个同样目的的App，但是写的惨不忍睹(虽然这个也差不多)\n\t\t谨以此，献给我的高中数学老师Fish n_n</string>
+    <string name="app_description">\t\t这是一个简单的安卓应用项目，它实现了人教版高中数学必修三算法章节的所有框图算法\n\t\t其实以前我还用AIDE做过一个同样目的的App，但是写的惨不忍睹(虽然这个也差不多)\n\t\t谨以此，献给我的高中数学老师鱼Sir n_n</string>
+    <string name="submit">提交</string>
+    <string name="page7_title">Page7 质数的判断</string>
+    <string name="page7_n">n</string>
+    <string name="appbar_title">Fish Math</string>
+    <string name="forepage">主页</string>
+    <string name="aboutpage">关于</string>
 </resources>

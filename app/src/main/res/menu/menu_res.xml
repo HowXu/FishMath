@@ -3,11 +3,11 @@
 
     <item
         android:id="@+id/forepage"
-        android:title="主页"
+        android:title="@string/forepage"
         android:icon="@drawable/forepage"/>
 
     <item
         android:id="@+id/about"
-        android:title="关于"
+        android:title="@string/aboutpage"
         android:icon="@drawable/about" />
 </menu>

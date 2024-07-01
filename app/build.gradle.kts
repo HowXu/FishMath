@@ -42,5 +42,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("com.github.tapadoo:alerter:7.2.4")
-    implementation("androidx.percentlayout:percentlayout:1.0.0")
+    //implementation("com.github.rubensousa:raiflatbutton:0.1")
+    //implementation("me.spark:submitbutton:1.0.1")
+    implementation("io.github.nikartm:fit-button:2.0.0")
+
 }
