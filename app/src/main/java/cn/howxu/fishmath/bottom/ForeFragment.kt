@@ -36,6 +36,7 @@ class ForeFragment : Fragment() {
         val icon:ImageButton = requireActivity().findViewById(R.id.search)
         icon.setOnClickListener{
             //println("??")
+            //System.exit(0)
             Alerter.create(requireActivity()).setText("你小子知道这个通知多难做吗T_").setTitle("正在开发中...").setBackgroundColorInt(Color.GREEN).show()
         }
     }

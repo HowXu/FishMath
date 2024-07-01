@@ -16,17 +16,26 @@
         android:background="#6003A9F4">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_launcher"/>
 
             <TextView
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
                 android:layout_centerInParent="true"
                 android:text="Fish Math"
+                android:layout_marginLeft="50dp"
+                android:layout_alignParentLeft="true"
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:fontFamily="@font/meslo_regular"/>
 
 
             <ImageButton
@@ -43,23 +52,51 @@
     </com.google.android.material.appbar.MaterialToolbar>
 
     <ScrollView
+        android:id="@+id/scoll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fishmath"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_description"
+                android:textColor="@color/black"
+                android:lineSpacingMultiplier="1.5"
+                android:letterSpacing="0.05"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/fzyh"
+                />
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_marginTop="100dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/shaped_layout">
 
 
+
             </RelativeLayout>
+
+
+
         </LinearLayout>
 
     </ScrollView>
