@@ -10,4 +10,9 @@
     <string name="appbar_title">Fish Math</string>
     <string name="forepage">主页</string>
     <string name="aboutpage">关于</string>
+
+    <string name="result">结果</string>
+    <string name="onDev">正在开发中...</string>
+    <string name="do_u_know">你小子知道这个通知多难做吗T_</string>
+    <string name="is_not_triangle">这不是三角形的三边</string>
 </resources>

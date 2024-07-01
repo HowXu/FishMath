@@ -26,10 +26,14 @@ android {
         }
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     compileSdk = 34
     buildToolsVersion = "35.0.0"
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
 }
 
 dependencies {
