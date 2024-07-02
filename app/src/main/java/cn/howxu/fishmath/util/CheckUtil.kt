@@ -2,7 +2,6 @@ package cn.howxu.fishmath.util
 
 import android.widget.EditText
 import java.math.BigDecimal
-import java.math.BigInteger
 
 class CheckUtil {
     /**

@@ -2,22 +2,15 @@ package cn.howxu.fishmath
 
 import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import cn.howxu.fishmath.bottom.AboutFragment
 import cn.howxu.fishmath.bottom.ForeFragment
 import cn.howxu.fishmath.bottom.SelectManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.tapadoo.alerter.Alerter
 
 class Entry : AppCompatActivity() {
 
