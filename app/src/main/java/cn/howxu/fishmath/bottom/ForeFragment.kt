@@ -161,6 +161,27 @@ class ForeFragment : Fragment() {
             }
         }
 
+        //Page15 求超过产值某一值最早年份
+        val page15_edittext_2: EditText = requireActivity().findViewById(R.id.page15_edit1_2)
+        val page15_submit_button_2: FitButton =requireActivity().findViewById(R.id.page15_submit_button_2)
+        val page15_attention_image_2: ImageButton =requireActivity().findViewById(R.id.page15_attention_2)
+
+        page15_attention_image_2.setOnClickListener{
+            Alerter.create(requireActivity()).setText(
+                getString(R.string.page15_attention_2)
+            ).setTitle(getString(R.string.result)).setDuration(4000L).setBackgroundColorInt(Color.rgb(229, 115, 115)).setIcon(R.drawable.attention)
+                .show()
+        }
+        page15_submit_button_2.setOnClickListener{
+            if (checkManager.isNotNull(page15_edittext_2)){
+                var b = BigDecimal(page15_edittext_2.text.toString())
+                Alerter.create(requireActivity()).setText(
+                    algorithmManager.Page15_ForecastOutputValue(b)
+                ).setTitle(getString(R.string.result)).setDuration(5000L).setBackgroundColorInt(Color.rgb(22, 175, 245))
+                    .show()
+            }
+        }
+
         }
     }
 

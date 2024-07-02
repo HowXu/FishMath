@@ -101,4 +101,26 @@ class Algorithm {
         } while (!(i > n))
         return S.toString()
     }
+
+    /**
+     * Page15 预估生产总值，太简单了孩子
+     *
+     * @param 求取总值数量
+     * @return 年份
+     */
+    fun Page15_ForecastOutputValue(b: BigDecimal): String {
+        var n = BigDecimal("2005")
+        var a = BigDecimal("200")
+        var t = BigDecimal("0")
+        if (b <= a) {
+            return "那我还算什么"
+        }
+        do {
+            t = a.multiply(BigDecimal("0.05"))
+            a = a.add(t)
+            n++
+        }while (!(a > b))
+        // 记住了是超过不是大于等于
+        return "年份为$n"
+    }
 }

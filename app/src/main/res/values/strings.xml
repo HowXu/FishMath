@@ -19,4 +19,7 @@
     <string name="page15_attention">原本只能求到100，升级了下可以求和到任意值\n值别太大，这个算法很烂会卡死</string>
     <string name="about_title">关于</string>
     <string name="github">访问项目Github页</string>
+    <string name="page15_title_2">Page15 计算产值最早年份</string>
+    <string name="page15_attention_2">2005年初始产值为200万元，技术革新后每年比上年增长5%，预计超过a万元的最早年份</string>
+    <string name="unit">万元</string>
 </resources>
