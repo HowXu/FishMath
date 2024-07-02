@@ -30,7 +30,7 @@ class AboutFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_about, container, false)
     }
 
-    @SuppressLint("CheckResult") //咱也不知道加这个有啥用
+    @SuppressLint("CheckResult", "SuspiciousIndentation") //咱也不知道加这个有啥用
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // 修不好URL跳转孩子

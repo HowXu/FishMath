@@ -66,11 +66,12 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="90dp">
+
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="100dp"
-                    android:layout_gravity="center"
                     android:layout_alignParentLeft="true"
+                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/fishmath" />
@@ -78,13 +79,12 @@
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="100dp"
-                    android:layout_gravity="center"
                     android:layout_alignParentRight="true"
+                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:src="@drawable/emoji" />
             </RelativeLayout>
-
 
 
             <TextView
@@ -675,7 +675,7 @@
                     app:fb_textStyle="normal"
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
-
+            <!-- Page27-->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
@@ -797,7 +797,216 @@
                     app:fb_textStyle="normal"
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
+            <!-- Page 35-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shaped_layout_enhance">
 
+                <ImageView
+                    android:id="@+id/img_page35"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/al" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/img_page35"
+                    android:fontFamily="@font/meslo_regular"
+                    android:text="@string/page35_title"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/page35_a"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page35"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="m"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/page35_b"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page35_a"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="n"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+                <EditText
+                    android:id="@+id/page35_edit1"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page35"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page35_a"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/page35_edit2"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page35_a"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page35_b"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+                <com.github.nikartm.button.FitButton
+                    android:id="@+id/page35_submit_button"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    app:fb_backgroundColor="#A8D8CD"
+                    app:fb_borderColor="#DDEFE3"
+                    app:fb_borderWidth="4dp"
+                    app:fb_cornerRadius="8dp"
+                    app:fb_fontFamilyRes="@font/fzyh"
+                    app:fb_rippleColor="#42FFF9C4"
+                    app:fb_shape="rectangle"
+                    app:fb_text="@string/submit"
+                    app:fb_textColor="@color/black"
+                    app:fb_textStyle="normal"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+            <!-- Page43-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shaped_layout_enhance">
+
+                <ImageView
+                    android:id="@+id/img_page43"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/al" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/img_page43"
+                    android:fontFamily="@font/meslo_regular"
+                    android:text="@string/page43_title"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageButton
+                    android:id="@+id/page43_attention_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/attention" />
+
+                <TextView
+                    android:id="@+id/page43_a"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page43"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="a"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/page43_k"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page43_a"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="k"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+
+                <EditText
+                    android:id="@+id/page43_edit1"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page43"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page43_a"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/page43_edit2"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page43_a"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page43_k"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="number"
+                    android:text="2"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+                <com.github.nikartm.button.FitButton
+                    android:id="@+id/page43_submit_button"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    app:fb_backgroundColor="#A8D8CD"
+                    app:fb_borderColor="#DDEFE3"
+                    app:fb_borderWidth="4dp"
+                    app:fb_cornerRadius="8dp"
+                    app:fb_fontFamilyRes="@font/fzyh"
+                    app:fb_rippleColor="#42FFF9C4"
+                    app:fb_shape="rectangle"
+                    app:fb_text="@string/submit"
+                    app:fb_textColor="@color/black"
+                    app:fb_textStyle="normal"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
         </LinearLayout>
 
     </ScrollView>

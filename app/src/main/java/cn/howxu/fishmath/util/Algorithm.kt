@@ -171,4 +171,59 @@ class Algorithm {
             return "$a > $b > $c"
         }
     }
+
+    /**
+     * Page35 辗转相除法
+     *
+     * @param 目标数字m,n
+       */
+
+    fun Page35_Division(a: BigInteger, b: BigInteger): String {
+        var m = a
+        var n = b
+        var r = BigInteger("1")
+        do {
+            r = m.remainder(n)
+            m = n
+            n = r
+        } while (!(r == BigInteger("0")))
+        return m.toString()
+    }
+
+    /**
+     * Page43 除k取余法
+     *
+     * @param 十进制数a，被转化数进制k
+     * @return k进制的a
+     */
+    fun Page43_k(x: BigInteger, y: BigInteger): String {
+
+        if (y < BigInteger("2") || y > BigInteger("9")){
+            return "这个进制会用到字母，书上也有k在[2,9]的限制"
+        }
+
+        var a = x
+        var k = y
+        var q = BigInteger("1")
+        var r = BigInteger("1")
+        var result = ""
+        do {
+            q = a.divide(k)
+            r = a.remainder(k)
+            result+=r.toString() //这里正向加，然后反向处理
+            a = q
+        }while (!(q == BigInteger("0")))
+         return  string_reverse(result)
+    }
+
+    fun string_reverse(str:String) : String {
+        var cr_ary = str.toCharArray()
+        var result = ""
+        var index = cr_ary.size
+        for (i in cr_ary.indices){
+            result+=cr_ary[index - 1]
+            index--
+        }
+        return result
+    }
 }

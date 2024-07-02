@@ -50,4 +50,7 @@
     <string name="nothing_title">无事发生</string>
     <string name="page9_title">Page9 海伦-秦九韶公式</string>
     <string name="page12_title">Page12 求解一元二次方程</string>
+    <string name="page35_title">Page35 辗转相除法</string>
+    <string name="page43_title">Page43 除k取余法</string>
+    <string name="page43_attention_2">前面的除2取余法也包含在这里了\\n参数为十进制数a，被转化数进制k ，k在[2,9]范围</string>
 </resources>

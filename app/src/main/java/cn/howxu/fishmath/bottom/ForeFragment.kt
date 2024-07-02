@@ -172,6 +172,7 @@ class ForeFragment : Fragment() {
             ).setTitle(getString(R.string.result)).setDuration(4000L).setBackgroundColorInt(Color.rgb(229, 115, 115)).setIcon(R.drawable.attention)
                 .show()
         }
+
         page15_submit_button_2.setOnClickListener{
             if (checkManager.isNotNull(page15_edittext_2)){
                 var b = BigDecimal(page15_edittext_2.text.toString())
@@ -215,6 +216,51 @@ class ForeFragment : Fragment() {
                     .show()
             }
         }
+
+        //Page35 辗转相除法
+        val page35_edittext_a: EditText = requireActivity().findViewById(R.id.page35_edit1)
+        val page35_edittext_b: EditText = requireActivity().findViewById(R.id.page35_edit2)
+        val page35_submit_button: FitButton =requireActivity().findViewById(R.id.page35_submit_button)
+        page35_submit_button.setOnClickListener {
+            //添加了null判定算是修个小bug
+            if (checkManager.isNotNull(page35_edittext_a,page35_edittext_b)){
+                Alerter.create(requireActivity()).setText(
+                    algorithmManager.Page35_Division(
+                        BigInteger(page35_edittext_a.text.toString()),
+                        BigInteger(page35_edittext_b.text.toString()),
+                    )
+                ).setTitle(getString(R.string.result)).setDuration(3000L).setBackgroundColorInt(Color.rgb(22, 175, 245))
+                    .show()
+            }
+        }
+
+        //Page43 除k取余法
+
+        val page43_attention_image_2: ImageButton =requireActivity().findViewById(R.id.page43_attention_2)
+
+        page43_attention_image_2.setOnClickListener{
+            Alerter.create(requireActivity()).setText(
+                getString(R.string.page43_attention_2)
+            ).setTitle(getString(R.string.result)).setDuration(5000L).setBackgroundColorInt(Color.rgb(229, 115, 115)).setIcon(R.drawable.attention)
+                .show()
+        }
+
+        val page43_edittext_a: EditText = requireActivity().findViewById(R.id.page43_edit1)
+        val page43_edittext_b: EditText = requireActivity().findViewById(R.id.page43_edit2)
+        val page43_submit_button: FitButton =requireActivity().findViewById(R.id.page43_submit_button)
+        page43_submit_button.setOnClickListener {
+            //添加了null判定算是修个小bug
+            if (checkManager.isNotNull(page43_edittext_a,page43_edittext_b)){
+                Alerter.create(requireActivity()).setText(
+                    algorithmManager.Page43_k(
+                        BigInteger(page43_edittext_a.text.toString()),
+                        BigInteger(page43_edittext_b.text.toString()),
+                    )
+                ).setTitle(getString(R.string.result)).setDuration(3000L).setBackgroundColorInt(Color.rgb(22, 175, 245))
+                    .show()
+            }
+        }
+
         }
     }
 
