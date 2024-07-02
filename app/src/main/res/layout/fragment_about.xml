@@ -98,13 +98,6 @@
                 android:textColor="#6D6D6D"
                 android:textSize="12dp" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/right" />
 
         </RelativeLayout>
 
@@ -155,13 +148,6 @@
                 android:textColor="#6D6D6D"
                 android:textSize="12dp" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/right" />
 
         </RelativeLayout>
 
@@ -212,13 +198,6 @@
                 android:textColor="#6D6D6D"
                 android:textSize="12dp" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/right" />
 
         </RelativeLayout>
 
@@ -269,13 +248,6 @@
                 android:textColor="#6D6D6D"
                 android:textSize="12dp" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/right" />
 
         </RelativeLayout>
     </RelativeLayout>
@@ -283,7 +255,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_below="@+id/contract">
 
         <TextView
@@ -347,13 +319,6 @@
                 android:textColor="#6D6D6D"
                 android:textSize="12dp" />
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerInParent="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/right" />
 
         </RelativeLayout>
         <RelativeLayout
@@ -404,13 +369,56 @@
                 android:textColor="#6D6D6D"
                 android:textSize="12dp" />
 
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:id="@+id/open3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/open2"
+            android:background="#8DFFFFFF"
+            android:foreground="?selectableItemBackgroundBorderless">
+
+
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
+                android:id="@+id/open_img_icon3"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
                 android:layout_centerInParent="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/right" />
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/open3" />
+
+            <TextView
+                android:id="@+id/open3_title"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/open_img_icon3"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/open3"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/open3_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/open_img_icon3"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/open3_uri"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
 
         </RelativeLayout>
 

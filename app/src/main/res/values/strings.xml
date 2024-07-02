@@ -37,4 +37,15 @@
     <string name="open1_uri">https://github.com/Tapadoo/Alerter</string>
     <string name="open2">nikartx/FitButton</string>
     <string name="open2_uri">https://github.com/nikartx/FitButton</string>
+    <string name="open3">afollestad/material-dialogs</string>
+    <string name="open3_uri">https://github.com/afollestad/material-dialogs</string>
+    <string name="fish_bottom">我们使用公式计算得到:\n喻sir=布置一堆作业+布置一堆作业+✓把它拿出来+2022年感动中国最美教师+存款和马云比肩+偶尔占两节大课间+高考前回来看望一下送吃的</string>
+    <string name="agree">好</string>
+    <string name="colorful_egg">彩蛋n_n</string>
+    <string name="input_hint">请输入...</string>
+    <string name="bug">遇到Bug了T_</string>
+    <string name="stop">好听记得star</string>
+    <string name="close">停止播放</string>
+    <string name="nothing">能不能输入点看起来像彩蛋的东西？</string>
+    <string name="nothing_title">无事发生</string>
 </resources>

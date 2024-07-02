@@ -49,5 +49,7 @@ dependencies {
     //implementation("com.github.rubensousa:raiflatbutton:0.1")
     //implementation("me.spark:submitbutton:1.0.1")
     implementation("io.github.nikartm:fit-button:2.0.0")
+    implementation("com.afollestad.material-dialogs:core:3.3.0")
+    implementation("com.afollestad.material-dialogs:input:3.3.0")
 
 }
