@@ -8,14 +8,14 @@
 			<center>
 				<img src="./screenshots/s1.jpg" width="80%" />
 				<br/>
-				<font color="AAAAAA">主页</font>
+				<font style="text-align:center">主页</font>
 			</center>
 		</td>
 		<td>
 			<center>
 				<img src="./screenshots/s2.jpg" width="80%" />
 				<br/>
-				<font color="AAAAAA">关于</font>
+				<font style="text-align:center">关于</font>
 			</center>
 		</td>
 	</tr>
