@@ -123,4 +123,20 @@ class Algorithm {
         // 记住了是超过不是大于等于
         return "年份为$n"
     }
+
+    /**
+     * Page25 质数的判断
+     * 这里使用BigDec大数运算满足更多场景
+     * 我感觉所有都要做大数运算T_
+     *
+     * @param 实数x
+     */
+    fun Page25_AbsoluteValue(x: BigDecimal): String {
+        return if(x >= BigDecimal("0")){
+            x.toString()
+        }else {
+            x.negate().toString()
+        }
+
+    }
 }

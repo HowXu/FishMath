@@ -182,6 +182,21 @@ class ForeFragment : Fragment() {
             }
         }
 
+        //Page25 求实数x的绝对值
+        val page25_edittext: EditText = requireActivity().findViewById(R.id.page25_edit1)
+        val page25_submit_button: FitButton =requireActivity().findViewById(R.id.page25_submit_button)
+        page25_submit_button.setOnClickListener {
+            //添加了null判定算是修个小bug
+            if (checkManager.isNotNull(page25_edittext)){
+                Alerter.create(requireActivity()).setText(
+                    algorithmManager.Page25_AbsoluteValue(
+                        BigDecimal(page25_edittext.text.toString())
+                    )//结果
+                ).setTitle(getString(R.string.result)).setDuration(3000L).setBackgroundColorInt(Color.rgb(22, 175, 245))
+                    .show()
+            }
+        }
+
         }
     }
 

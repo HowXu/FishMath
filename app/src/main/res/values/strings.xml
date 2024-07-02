@@ -22,4 +22,6 @@
     <string name="page15_title_2">Page15 计算产值最早年份</string>
     <string name="page15_attention_2">2005年初始产值为200万元，技术革新后每年比上年增长5%，预计超过a万元的最早年份</string>
     <string name="unit">万元</string>
+    <string name="page25_title">Page25 求实数x绝对值</string>
+    <string name="page25_x">x</string>
 </resources>
