@@ -3,14 +3,10 @@ package cn.howxu.fishmath.bottom
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.view.KeyEvent
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import androidx.constraintlayout.widget.ConstraintSet.Layout
-import cn.howxu.fishmath.Entry
+import androidx.fragment.app.Fragment
 import cn.howxu.fishmath.R
 
 

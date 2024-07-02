@@ -27,8 +27,8 @@ class Entry : AppCompatActivity() {
 
     //看不懂继承
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.main)
 
         val selectManager: SelectManager = SelectManager(supportFragmentManager)
         //开头在首页
@@ -68,15 +68,15 @@ class Entry : AppCompatActivity() {
                     val imm: InputMethodManager =
                         getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
                     //assert v != null;原版Java的写法应该和闪退有关
-                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                    imm.hideSoftInputFromWindow(v.windowToken, 0)
                     /** here 另一个版本的Focus更替*/
-                    v.clearFocus();
+                    v.clearFocus()
                 }
             }
-            return super.dispatchTouchEvent(ev);
+            return super.dispatchTouchEvent(ev)
         }
         // 必不可少，否则所有的组件都不会有TouchEvent了
-        return getWindow().superDispatchTouchEvent(ev) || onTouchEvent(ev);
+        return window.superDispatchTouchEvent(ev) || onTouchEvent(ev)
     }
 
 
@@ -84,15 +84,15 @@ class Entry : AppCompatActivity() {
         if (v is EditText) {
             val leftTop: IntArray = intArrayOf(0, 0)
             //获取输入框当前的location位置
-            v.getLocationInWindow(leftTop);
-            val left: Int = leftTop[0];
-            val top: Int = leftTop[1];
-            val bottom: Int = top + v.getHeight();
-            val right: Int = left + v.getWidth();
+            v.getLocationInWindow(leftTop)
+            val left: Int = leftTop[0]
+            val top: Int = leftTop[1]
+            val bottom: Int = top + v.getHeight()
+            val right: Int = left + v.getWidth()
             return !(event.x > left && event.x < right
-                    && event.y > top && event.y < bottom);
+                    && event.y > top && event.y < bottom)
         }
-        return false;
+        return false
     }
 
 }

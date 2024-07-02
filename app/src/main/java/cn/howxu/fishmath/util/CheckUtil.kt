@@ -11,17 +11,11 @@ class CheckUtil {
      */
     fun isTriangle(a: BigDecimal, b:BigDecimal, c:BigDecimal):Boolean{
 
-        if (a.add(b) > c && b.add(c) > a && c.add(a) > b){
-            return true
-        }
-        return false
+        return a.add(b) > c && b.add(c) > a && c.add(a) > b
     }
 
     fun isNotNull(ed:EditText):Boolean{
-        if (ed.text.toString() == ""){
-            return false
-        }
-        return true
+        return ed.text.toString() != ""
     }
 
     fun isNotNull(ed1:EditText,ed2:EditText):Boolean{
