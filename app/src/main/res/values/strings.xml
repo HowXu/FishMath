@@ -48,4 +48,6 @@
     <string name="close">停止播放</string>
     <string name="nothing">能不能输入点看起来像彩蛋的东西？</string>
     <string name="nothing_title">无事发生</string>
+    <string name="page9_title">Page9 海伦-秦九韶公式</string>
+    <string name="page12_title">Page12 求解一元二次方程</string>
 </resources>

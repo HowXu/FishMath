@@ -119,7 +119,7 @@ class Algorithm {
             t = a.multiply(BigDecimal("0.05"))
             a = a.add(t)
             n++
-        }while (!(a > b))
+        } while (!(a > b))
         // 记住了是超过不是大于等于
         return "年份为$n"
     }
@@ -132,11 +132,43 @@ class Algorithm {
      * @param 实数x
      */
     fun Page25_AbsoluteValue(x: BigDecimal): String {
-        return if(x >= BigDecimal("0")){
+        return if (x >= BigDecimal("0")) {
             x.toString()
-        }else {
+        } else {
             x.negate().toString()
         }
 
+    }
+
+    /**
+     * Page27 任意三个数排序
+     *
+     * @param 三个数a,b,c
+     */
+    fun Page27_TriSort(x: BigDecimal, y: BigDecimal, z: BigDecimal): String {
+        var a = x
+        var b = y
+        var c = z
+        var t = BigDecimal("0")
+        if (a == b || b == c || a == c){
+            return "那书上没这个情况 :("
+        }else{
+            if (b > a){
+                t = a
+                a = b
+                b = t
+            }
+            if(c > a){
+                t = a
+                a = c
+                c = t
+            }
+            if (c > b){
+                t = b
+                b = c
+                c = t
+            }
+            return "$a > $b > $c"
+        }
     }
 }

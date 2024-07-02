@@ -199,7 +199,7 @@
                     android:layout_marginTop="14dp"
                     android:layout_toRightOf="@+id/img_page9"
                     android:fontFamily="@font/meslo_regular"
-                    android:text="Page9 海伦-秦九韶公式"
+                    android:text="@string/page9_title"
                     android:textColor="@color/black"
                     android:textSize="18dp" />
 
@@ -321,7 +321,7 @@
                     android:layout_marginTop="14dp"
                     android:layout_toRightOf="@+id/img_page12"
                     android:fontFamily="@font/meslo_regular"
-                    android:text="Page12 求解一元二次方程"
+                    android:text="@string/page12_title"
                     android:textColor="@color/black"
                     android:textSize="18dp" />
 
@@ -418,7 +418,7 @@
                     app:fb_textStyle="normal"
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
-
+            <!--Page15 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -503,6 +503,7 @@
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
 
+            <!--Page15 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -600,6 +601,7 @@
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
 
+            <!--Page25 -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -654,6 +656,128 @@
 
                 <com.github.nikartm.button.FitButton
                     android:id="@+id/page25_submit_button"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    app:fb_backgroundColor="#A8D8CD"
+                    app:fb_borderColor="#DDEFE3"
+                    app:fb_borderWidth="4dp"
+                    app:fb_cornerRadius="8dp"
+                    app:fb_fontFamilyRes="@font/fzyh"
+                    app:fb_rippleColor="#42FFF9C4"
+                    app:fb_shape="rectangle"
+                    app:fb_text="@string/submit"
+                    app:fb_textColor="@color/black"
+                    app:fb_textStyle="normal"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shaped_layout">
+
+                <ImageView
+                    android:id="@+id/img_page27"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/page" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_toRightOf="@+id/img_page27"
+                    android:fontFamily="@font/meslo_regular"
+                    android:text="Page27 任意三个数从大到小"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/page27_a"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page27"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="a"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/page27_b"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page27_a"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="b"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:id="@+id/page27_c"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page27_b"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="c"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/page27_edit1"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/img_page27"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page27_a"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="numberSigned|numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/page27_edit2"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page27_a"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page27_b"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="numberSigned|numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/page27_edit3"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/page27_b"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/page27_c"
+                    android:background="@drawable/color_edittext"
+                    android:inputType="numberSigned|numberDecimal"
+                    tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                <com.github.nikartm.button.FitButton
+                    android:id="@+id/page27_submit_button"
                     android:layout_width="80dp"
                     android:layout_height="40dp"
                     android:layout_alignParentRight="true"

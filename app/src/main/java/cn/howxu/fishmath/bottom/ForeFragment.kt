@@ -197,6 +197,24 @@ class ForeFragment : Fragment() {
             }
         }
 
+        //Page27 任意三个数从大到小输出
+        val page27_edittext_a: EditText = requireActivity().findViewById(R.id.page27_edit1)
+        val page27_edittext_b: EditText = requireActivity().findViewById(R.id.page27_edit2)
+        val page27_edittext_c: EditText = requireActivity().findViewById(R.id.page27_edit3)
+        val page27_submit_button: FitButton =requireActivity().findViewById(R.id.page27_submit_button)
+        page27_submit_button.setOnClickListener {
+            //添加了null判定算是修个小bug
+            if (checkManager.isNotNull(page27_edittext_a,page27_edittext_b,page27_edittext_c)){
+                Alerter.create(requireActivity()).setText(
+                    algorithmManager.Page27_TriSort(
+                        BigDecimal(page27_edittext_a.text.toString()),
+                        BigDecimal(page27_edittext_b.text.toString()),
+                        BigDecimal(page27_edittext_c.text.toString())
+                    )//结果
+                ).setTitle(getString(R.string.result)).setDuration(3000L).setBackgroundColorInt(Color.rgb(22, 175, 245))
+                    .show()
+            }
+        }
         }
     }
 
