@@ -24,4 +24,17 @@
     <string name="unit">万元</string>
     <string name="page25_title">Page25 求实数x绝对值</string>
     <string name="page25_x">x</string>
+    <string name="mail">发送邮件</string>
+    <string name="github_uri">https://github.com/HowXu/FishMath</string>
+    <string name="mail_uri">howxu366@outlook.com</string>
+    <string name="about_fish">关于鱼Sir</string>
+    <string name="fish_desc">当真不想了解一下？</string>
+    <string name="jay">小彩蛋</string>
+    <string name="jay_desc">猜猜是哪一首</string>
+    <string name="opensources_thank_title">开源鸣谢</string>
+    <string name="contract_title">联系</string>
+    <string name="open1">Tapadoo/Alerter</string>
+    <string name="open1_uri">https://github.com/Tapadoo/Alerter</string>
+    <string name="open2">nikartx/FitButton</string>
+    <string name="open2_uri">https://github.com/nikartx/FitButton</string>
 </resources>

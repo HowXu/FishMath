@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".bottom.AboutFragment"
+    android:layout_marginBottom="55dp"
     android:background="@drawable/color_gradient"
     android:theme="@style/Theme.FishMath"
-    android:layout_marginBottom="55dp">
+    tools:context=".bottom.AboutFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -28,61 +28,392 @@
                 android:layout_centerInParent="true"
                 android:src="@drawable/ic_launcher" />
 
-            <TextView
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="50dp"
-                android:fontFamily="@font/fzyh"
-                android:text="@string/about_title"
-                android:textColor="@color/white"
-                android:textSize="25dp" />
-
         </RelativeLayout>
 
     </com.google.android.material.appbar.MaterialToolbar>
 
+
     <RelativeLayout
-        android:id="@+id/github_page"
+        android:id="@+id/contract"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/white"
-        android:layout_marginTop="70dp"
-        android:foreground="?selectableItemBackgroundBorderless">
-
-
-        <ImageView
-            android:id="@+id/github"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_centerInParent="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/github"
-            />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp">
 
         <TextView
             android:layout_width="150dp"
             android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:layout_toRightOf="@id/github"
-            android:layout_marginLeft="10dp"
-            android:text="@string/github"
-            android:gravity="center|left"
-            android:textColor="@color/black"
-            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
             android:fontFamily="@font/fzyh"
-            />
+            android:gravity="center|left"
+            android:text="@string/contract_title"
+            android:textColor="#000000"
+            android:textSize="12dp" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="30dp"
+        <RelativeLayout
+            android:id="@+id/github_page"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackgroundBorderless">
+
+
+            <ImageView
+                android:id="@+id/github"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/github" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/github"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/github"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/github"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/github"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/github_uri"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/mail_page"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/github_page"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackgroundBorderless">
+
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/mail" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/mail"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/mail"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/mail"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/mail"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/mail_uri"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/about_fish_page"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/mail_page"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackgroundBorderless">
+
+
+            <ImageView
+                android:id="@+id/about_fish"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/fish" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/about_fish"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/about_fish"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/about_fish"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/about_fish"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/fish_desc"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/jay_music"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/about_fish_page"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackgroundBorderless">
+
+
+            <ImageView
+                android:id="@+id/jay"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/jay" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/jay"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/jay"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/jay"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/jay"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/jay_desc"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/contract">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
             android:layout_centerInParent="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="5dp"
-            android:src="@drawable/right"
-        />
+            android:layout_marginLeft="5dp"
+            android:fontFamily="@font/fzyh"
+            android:gravity="center|left"
+            android:text="@string/opensources_thank_title"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <RelativeLayout
+
+            android:id="@+id/open1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="#8DFFFFFF"
+            android:foreground="?selectableItemBackgroundBorderless">
+
+
+            <ImageView
+                android:id="@+id/open_img_icon1"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/open1" />
+
+            <TextView
+                android:id="@+id/open1_title"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/open_img_icon1"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/open1"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/open1_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/open_img_icon1"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/open1_uri"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:id="@+id/open2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/open1"
+            android:background="#8DFFFFFF"
+            android:foreground="?selectableItemBackgroundBorderless">
+
+
+            <ImageView
+                android:id="@+id/open_img_icon2"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/open2" />
+
+            <TextView
+                android:id="@+id/open2_title"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/open_img_icon2"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/open2"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/open2_title"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/open_img_icon2"
+                android:fontFamily="@font/fzyh"
+                android:gravity="center|left"
+                android:text="@string/open2_uri"
+                android:textColor="#6D6D6D"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/right" />
+
+        </RelativeLayout>
+
 
     </RelativeLayout>
 
